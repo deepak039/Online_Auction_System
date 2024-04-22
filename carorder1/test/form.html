@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Details Upload</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Custom CSS for the car details form */
+        body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            margin-top: 20px;
+        }
+        .form-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            font-weight: bold;
+        }
+        /* Custom styles for the file input */
+        .custom-file-input {
+            cursor: pointer;
+        }
+        /* Style for the submit button */
+        .btn-submit {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+        }
+        .btn-submit:hover {
+            background-color: #0056b3;
+        }
+        /* Redesigned form styles */
+        .form-heading {
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            border-radius: 10px 10px 0 0;
+        }
+        .form-section {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 0 0 10px 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form-heading">
+            <h1>Car Details Upload</h1>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-6 form-section">
+                <form>
+                    <div class="form-group">
+                        <label for="carName">Car Name</label>
+                        <input type="text" class="form-control" id="carName" placeholder="Enter car name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="carModel">Model</label>
+                        <input type="text" class="form-control" id="carModel" placeholder="Enter car model" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="carMilage">Milage (MPG)</label>
+                        <input type="number" class="form-control" id="carMilage" placeholder="Enter milage" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="carYear">Year</label>
+                        <input type="number" class="form-control" id="carYear" placeholder="Enter year" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="carDescription">Description</label>
+                        <textarea class="form-control" id="carDescription" rows="3" placeholder="Enter car description" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="carPrice">Price ($)</label>
+                        <input type="number" class="form-control" id="carPrice" placeholder="Enter price" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="carCondition">Condition of Car</label>
+                        <select class="form-control" id="carCondition" required>
+                            <option value="New">New</option>
+                            <option value="Used">Used</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="carImages">Upload Images</label>
+                        <input type="file" class="custom-file-input" id="carImages" accept="image/*" multiple required>
+                        <label class="custom-file-label" for="carImages">Choose file(s)</label>
+                    </div>
+                    <button type="submit" class="btn btn-submit btn-block">Upload</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Include Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

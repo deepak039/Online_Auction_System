@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Car Dashboard</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Include your custom CSS -->
+    <link rel="stylesheet" href="custom.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Side Menu -->
+            <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="position-sticky">
+                    <ul class="nav flex-column">
+                        <!-- List Old Car -->
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">
+                                List Old Car
+                            </a>
+                        </li>
+                        <!-- Edit Listing -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                Edit Listing
+                            </a>
+                        </li>
+                        <!-- Listing Requests -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                Listing Requests
+                            </a>
+                        </li>
+                        <!-- Favorite Cars -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                Favorite Cars
+                            </a>
+                        </li>
+                        <!-- Your Car Status (Cars to Buy) -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                Your Car Status (Cars to Buy)
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- Main Content -->
+            <!-- Main Content -->
+<main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+    <h1>Welcome to Your Car Dashboard</h1>
+    
+    <!-- List Old Car Section -->
+    <section>
+        <h2>List Your Old Car</h2>
+        <p>Click the "List Old Car" button to create a new listing for your old car. Fill in the details, including make, model, year, and price.</p>
+        <button class="btn btn-primary">List Old Car</button>
+    </section>
+
+    <!-- Edit Listing Section -->
+    <section>
+        <h2>Edit Your Listings</h2>
+        <p>You can edit your existing car listings here. Make changes to the listing details or update the price as needed.</p>
+        <!-- Sample listing (replace with dynamic data) -->
+        <div class="card">
+            <div class="card-body">
+                Listing 1 [Edit] [Status: Active]
+            </div>
+        </div>
+        <!-- Add more listings here -->
+    </section>
+
+    <!-- Listing Requests Section -->
+    <section>
+        <h2>Listing Requests</h2>
+        <p>View and manage requests from potential buyers related to your car listings. Approve or reject requests based on your preferences.</p>
+        <!-- Sample request (replace with dynamic data) -->
+        <div class="card">
+            <div class="card-body">
+                Request 1 [Approve] [Reject]
+            </div>
+        </div>
+        <!-- Add more requests here -->
+    </section>
+
+    <!-- Favorite Cars Section -->
+    <section>
+        <h2>Favorite Cars</h2>
+        <p>Keep track of your favorite car listings. Add or remove listings from your favorites for quick access.</p>
+        <!-- Sample favorite (replace with dynamic data) -->
+        <div class="card">
+            <div class="card-body">
+                Favorite 1 [Remove from Favorites]
+            </div>
+        </div>
+        <!-- Add more favorites here -->
+    </section>
+
+    <!-- Your Car Status (Cars to Buy) Section -->
+    <section>
+        <h2>Your Car Status (Cars to Buy)</h2>
+        <p>Monitor the status of cars you are interested in buying. View listings you are pursuing, offers made, offers accepted, and offers rejected.</p>
+        <!-- Sample car status (replace with dynamic data) -->
+        <div class="card">
+            <div class="card-body">
+                Pursuing<br>
+                Car 1 [View Details]<br>
+                Car 2 [View Details]
+            </div>
+        </div>
+        <!-- Add more car statuses here -->
+    </section>
+</main>
+
+        </div>
+    </div>
+
+    <!-- Include Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

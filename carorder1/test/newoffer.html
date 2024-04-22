@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Order Dashboard</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS for aesthetics -->
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        th {
+            background-color: #343a40;
+            color: #ffffff;
+        }
+        .table {
+            background-color: #ffffff;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+        .table td,
+        .table th {
+            border: none;
+        }
+        .form-select {
+            width: 100%;
+        }
+        .btn-success, .btn-danger {
+            width: 100%;
+            margin-top: 5px;
+        }
+        .timestamp {
+            font-size: 0.9rem;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container mt-5">
+    <h1 class="mb-4">Car Order Dashboard</h1>
+    
+    <!-- Table to display car orders -->
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Order ID</th>
+                <th>Car Model</th>
+                <th>Consumer Name</th>
+                <th>Consumer Address</th>
+                <th>Status</th>
+                <th>Comment</th>
+                <th>Timestamp</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Sample data (you should fetch this from the backend) -->
+            <tr>
+                <td>1</td>
+                <td>Toyota Camry</td>
+                <td>John Doe</td>
+                <td>123 Main St</td>
+                <td>
+                    <!-- Status fetched from the backend -->
+                    <select class="form-select" id="status1">
+                        <!-- Options will be populated by JavaScript -->
+                    </select>
+                </td>
+                <td>
+                    <input type="text" class="form-control" placeholder="Add a comment">
+                </td>
+                <td class="timestamp">2023-09-18 10:30 AM</td>
+                <td>
+                    <button class="btn btn-success" onclick="saveStatus(1)">Save</button>
+                    <button class="btn btn-danger" onclick="rejectOrder(1)">Reject</button>
+                </td>
+            </tr>
+            <!-- Add more rows for additional orders -->
+        </tbody>
+    </table>
+</div>
+
+<!-- Bootstrap JS (Popper.js and jQuery are required for Bootstrap) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    // JavaScript code to fetch status options from the backend and populate the dropdown
+    // You need to replace this with your actual backend API calls
+    function fetchStatusOptions() {
+        // Fetch status options from the backend API
+        const statusOptions = ['Pending', 'Accepted', 'Rejected'];
+
+        // Populate the select dropdown for each order
+        statusOptions.forEach(option => {
+            const selectElement = document.getElementById('status1'); // Replace '1' with the appropriate order ID
+            const optionElement = document.createElement('option');
+            optionElement.value = option.toLowerCase();
+            optionElement.textContent = option;
+            selectElement.appendChild(optionElement);
+        });
+    }
+
+    // Function to save the selected status to the backend
+    function saveStatus(orderId) {
+        const selectElement = document.getElementById(`status${orderId}`);
+        const selectedStatus = selectElement.value;
+
+        // Send a request to the backend to update the status for the order with orderId
+        // You'll need to implement this part using your backend API
+        // Example: Use fetch() or XMLHttpRequest to send the data to the server
+    }
+
+    // Function to reject an order
+    function rejectOrder(orderId) {
+        // Implement logic to reject the order
+        // You'll need to send a request to the backend to update the order status and add a comment
+    }
+
+    // Fetch status options when the page loads
+    fetchStatusOptions();
+</script>
+</body>
+</html>

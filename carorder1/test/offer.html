@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offers Dashboard</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <style>
+        /* Custom CSS for the offers dashboard */
+        body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            margin-top: 20px;
+        }
+        .card {
+            margin-bottom: 20px;
+            border: 1px solid #e1e1e1;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease-in-out;
+        }
+        .card:hover {
+            transform: scale(1.02);
+        }
+        .card-img-top {
+            max-height: 200px;
+            object-fit: cover;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .card-body {
+            padding: 20px;
+        }
+        .car-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .offer-details {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        .btn-accept, .btn-reject {
+            font-size: 16px;
+            margin-right: 10px;
+        }
+        /* CSS to change the color of the favorite icon when clicked */
+.favorite-icon.clicked {
+    color: rgb(44, 8, 8);
+    background-color: rgb(41, 6, 13); /* You can change the color to your preferred color */
+}
+/* CSS to position the favorite icon at the top-right corner */
+.favorite-icon{
+    position: absolute;
+    top: 6px;
+    right: 6px;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Offers Dashboard</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="https://via.placeholder.com/300x200" alt="Car Image">
+                    <div class="card-body">
+                        <!-- Add a clickable favorite icon here -->
+                        <a href="#" class="btn btn-link favorite-icon">
+                            <i class="fas fa-heart fa-2x"></i>
+                        </a>
+                        <h5 class="car-title">2021 Toyota Camry</h5>
+                        <p class="offer-details">Offer Amount: $20,000</p>
+                        <p class="offer-details">Buyer: John Doe</p>
+                        <div class="text-center">
+                            <a href="#" class="btn btn-success btn-accept">Accept Offer</a>
+                            <a href="#" class="btn btn-danger btn-reject">Reject Offer</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="https://via.placeholder.com/300x200" alt="Car Image">
+                    <div class="card-body">
+                        <h5 class="car-title">2021 Toyota Camry</h5>
+                        <p class="offer-details">Offer Amount: $20,000</p>
+                        <p class="offer-details">Buyer: John Doe</p>
+                        <div class="text-center">
+                            <a href="#" class="btn btn-success btn-accept">Accept Offer</a>
+                            <a href="#" class="btn btn-danger btn-reject">Reject Offer</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="https://via.placeholder.com/300x200" alt="Car Image">
+                    <div class="card-body">
+                        <h5 class="car-title">2021 Toyota Camry</h5>
+                        <p class="offer-details">Offer Amount: $20,000</p>
+                        <p class="offer-details">Buyer: John Doe</p>
+                        <div class="text-center">
+                            <a href="#" class="btn btn-success btn-accept">Accept Offer</a>
+                            <a href="#" class="btn btn-danger btn-reject">Reject Offer</a>
+                        </div>
+                    </div>
+                </div>
+            </div><div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="https://via.placeholder.com/300x200" alt="Car Image">
+                    <div class="card-body">
+                        <h5 class="car-title">2021 Toyota Camry</h5>
+                        <p class="offer-details">Offer Amount: $20,000</p>
+                        <p class="offer-details">Buyer: John Doe</p>
+                        <div class="text-center">
+                            <a href="#" class="btn btn-success btn-accept">Accept Offer</a>
+                            <a href="#" class="btn btn-danger btn-reject">Reject Offer</a>
+                        </div>
+                    </div>
+                </div>
+            </div><div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="https://via.placeholder.com/300x200" alt="Car Image">
+                    <div class="card-body">
+                        <h5 class="car-title">2021 Toyota Camry</h5>
+                        <p class="offer-details">Offer Amount: $20,000</p>
+                        <p class="offer-details">Buyer: John Doe</p>
+                        <div class="text-center">
+                            <a href="#" class="btn btn-success btn-accept">Accept Offer</a>
+                            <a href="#" class="btn btn-danger btn-reject">Reject Offer</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Repeat similar card structure for other offers -->
+        </div>
+    </div>
+
+    <!-- Include Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Get all the favorite icons
+            const favoriteIcons = document.querySelectorAll(".favorite-icon");
+    
+            // Add a click event listener to each favorite icon
+            favoriteIcons.forEach(function (icon) {
+                icon.addEventListener("click", function (event) {
+                    event.preventDefault();
+    
+                    // Toggle the clicked state
+                    const isClicked = icon.getAttribute("data-clicked") === "true";
+                    icon.setAttribute("data-clicked", !isClicked);
+    
+                    // Toggle the color class to change the color
+                    icon.classList.toggle("clicked");
+                });
+            });
+        });
+    </script>
+    
+</body>
+</html>
