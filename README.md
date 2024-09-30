@@ -1,4 +1,4 @@
-# Online Auction Systemm
+# Online Auction System
 
 ## Aim: This project is aimed at developing an attractive multi-user Auction System desktop application which would allow users to participate in an auction both as sellers and buyers. The application handles auctions running in parallel. 
 
