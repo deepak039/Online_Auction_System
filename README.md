@@ -130,7 +130,7 @@ Open xampp folder and open htdocs folder
 
 
 
-![alt text](https://github.com/anirudhgupta03/Multiuser-Auction-System/blob/main/Instruction%20Manual/s10.jpg?raw=true)
+
 
 
 
@@ -140,7 +140,7 @@ Open xampp folder and open htdocs folder
 
 Add source code folder in htdocs folder
 
-![alt text](https://github.com/anirudhgupta03/Multiuser-Auction-System/blob/main/Instruction%20Manual/s11.jpg?raw=true)
+
 
  
 
