@@ -154,7 +154,6 @@ Click on new, enter name of database as ‘online-auction-master’ and click on
  
 
 
-![alt text](https://github.com/anirudhgupta03/Multiuser-Auction-System/blob/main/Instruction%20Manual/s12.png?raw=true)
 
 
 #### Step 3 : Import database
@@ -162,7 +161,6 @@ Click on new, enter name of database as ‘online-auction-master’ and click on
 Select new created database and go to ‘import’ section and choose the .sql file as shown in the image
 
  
-![alt text](https://github.com/anirudhgupta03/Multiuser-Auction-System/blob/main/Instruction%20Manual/s13.png?raw=true)
 
 Click on ‘Go’ button at the bottom.
 Now the database is added.
@@ -174,7 +172,7 @@ Go to the browser and paste http://localhost/Online-Auction-master/
 or http://localhost/your-project-name/
 
  
-![alt text](https://github.com/anirudhgupta03/Multiuser-Auction-System/blob/main/Instruction%20Manual/s14.png?raw=true)
+
 
 Note : 
 
